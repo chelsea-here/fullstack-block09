@@ -24,18 +24,29 @@ nav > a {
   color: black;
 }
 
-nav > div > a > img {
-  height: 1.2rem;
-  width: auto;
-}
-
 main {
   margin-top: 5rem; /* offset the height of nav */
-  /* padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-} */
+  margin-bottom: 5rem; /* offset the height of the footer */
+}
+
+footer {
+  position: fixed; /* keeps the bar at the top of the screen */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  background-color: darkorange;
+  display: flex; /* allows the content to maintain design intent even if content is added */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+footer a > img {
+  height: 1.2rem;
+  width: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .intro {
@@ -52,4 +63,13 @@ main {
 .illustration > img {
   height: 75%;
   width: auto;
+}
+
+.description {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
 }
