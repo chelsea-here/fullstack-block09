@@ -5,48 +5,58 @@ body {
 }
 
 nav {
-  position: fixed; /* keeps the bar at the top of the screen */
   top: 0;
+}
+
+nav a {
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* TODO: add an transitioned underline for current anchor tag */
+
+.navGraphics {
+  position: fixed; /* keeps the bar at the top / bottom of the screen */
   left: 0;
   right: 0;
-  height: 5rem;
+  height: 7vh;
   font-size: 1.2rem;
   display: flex; /* allows the content to maintain design intent even if content is added */
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem; /* adds space between each direct child component */
-  color: black;
-  background-color: darkorange;
+  color: white;
+  background-color: black;
 }
 
-nav > a {
-  color: black;
+svg {
+  fill: white;
+  height: 1.6rem;
+  width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 main {
-  margin-top: 5rem; /* offset the height of nav */
-  margin-bottom: 5rem; /* offset the height of the footer */
+  margin-top: 7vh; /* offset the height of nav */
+  margin-bottom: 7vh; /* offset the height of the footer */
 }
 
-footer {
-  position: fixed; /* keeps the bar at the top of the screen */
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 5rem;
-  background-color: darkorange;
-  display: flex; /* allows the content to maintain design intent even if content is added */
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: black;
+h2 {
+  font-weight: 400;
 }
-footer a > img {
-  height: 1.2rem;
-  width: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+
+span {
+  font-weight: 300;
+}
+
+blockquote {
+  padding-top: 6rem;
+}
+footer {
+  bottom: 0;
 }
 
 .intro {
@@ -55,21 +65,24 @@ footer a > img {
 }
 
 .illustration {
+  margin-left: 4rem;
   width: 30rem;
-  height: 100vh;
+  height: 86vh;
+  background-color: aqua;
+  background-image: url(images/openartCC.png);
+  background-size: cover;
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
-.illustration > img {
-  height: 75%;
+/* .illustration > img {
+  height: 100%;
   width: auto;
-}
+} */
 
 .description {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
